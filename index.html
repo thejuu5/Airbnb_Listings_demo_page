@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Airbnb SF Listings</title>
+    <title>AirBNB Listings</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -12,639 +12,165 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <div class="container">
-      <main>
+      <header>
         <nav>
-          <a href="./about.html">About Page</a>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"
+                      >Disabled</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
         </nav>
-        <h1>Airbnb SF Listings</h1>
+      </header>
 
+      <h1>AirBNB Listings Reloaded!</h1>
+      <section>
         <div class="row">
-          <div class="col-md-8 col-sm-12">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-            porro nemo voluptas. Distinctio aut vel sed sapiente cumque quaerat,
-            harum consequatur perferendis quas, voluptas nisi quae odit culpa
-            necessitatibus repellendus!
+          <div class="col-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            molestias ullam temporibus nihil quaerat corrupti. Aperiam, minus.
+            Sit, nam velit unde ratione doloribus, amet exercitationem delectus
+            eligendi, minima voluptate omnis!
           </div>
-          <div class="col-md-4 col-sm-12">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo totam
-            laudantium reprehenderit beatae nam, eligendi laborum earum quae
-            quibusdam. Quisquam, fuga iste architecto nesciunt itaque
-            consectetur expedita delectus quod quibusdam?
+
+          <div class="col-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugit
+            sed quae saepe, numquam quibusdam rerum id pariatur doloribus esse
+            dicta similique officiis molestias tempora quos ex voluptatem
+            consectetur reiciendis.
           </div>
         </div>
+      </section>
+      <!-- //intro -->
 
-        <section>
-          <div id="listings" class="row">
-            <div class="listing col-4">
-              <div class="card">
+      <hr />
 
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
+      <section>
+        <h2>Listings</h2>
 
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
+        <div class="mb-3">
+  <label for="sortSelect" class="form-label"><strong>Sort by price:</strong></label>
+  <select id="sortSelect" class="form-select" style="max-width: 250px;">
+    <option value="default">Default</option>
+    <option value="lowToHigh">Price: Low to High</option>
+    <option value="highToLow">Price: High to Low</option>
+  </select>
+</div>
 
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
-                      <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
-                      </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
+        <div id="listings" class="row">
+          <div class="col-4">
+            <div class="listing card">
+              <img
+                src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                class="card-img-top"
+                alt="AirBNB Listing"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
-              <!-- /.card -->
             </div>
-            <!-- /.listing -->
-
-
-            <div class="listing col-4">
-              <div class="card">
-
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
-
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
-
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
-                      <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
-                      </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.listing -->
-
-
-
-            <div class="listing col-4">
-              <div class="card">
-
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
-
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
-
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
-                      <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
-                      </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.listing -->
-
-
-
-            <div class="listing col-4">
-              <div class="card">
-
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
-
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
-
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
-                      <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
-                      </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.listing -->
-
-
-            <div class="listing col-4">
-              <div class="card">
-
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
-
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
-
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
-                      <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
-                      </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.listing -->
-
-
-            <div class="listing col-4">
-              <div class="card">
-
-                <img
-                    class="card-img-top"
-                    src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
-                    alt="Listing 1 Picture"
-                  />
-
-                <h2 class="listing_name card-title">
-                  Serviced apartment in San Francisco · ★4.87 · 1 bedroom · 2
-                  beds · 1 bath
-                </h2>
-
-
-
-                <div class="card-body">
-                  <div class="host">
-                    <img
-                    
-                    src="https://a0.muscache.com/im/pictures/user/efdad96a-3efc-4bc2-bdc9-f69740a5a818.jpg?aki_policy=profile_small"
-                    alt="Holly's Host Thumbnail"
-                  />
-                    <div class="host_name">Holly</div>
-                  </div>
-                  <div class="price">$187.00</div>
-                  <div class="neighborhood">
-                    San Francisco, California, United States
-                  </div>
-                  
-                  <div class="amenities">
-                    <h3>Amenities</h3>
-                    <ul>
-                      <li>Carbon monoxide alarm</li>
-                      <li>Kitchen</li>
-                      <li>Essentials</li>
-                      <li>Shared backyard \u2013 Fully fenced</li>
-                      <li>Crib</li>
-                      <li>Luggage dropoff allowed</li>
-                      <li>Free dryer \u2013 In building</li>
-                      <li>Hot water kettle</li>
-                      <li>TEA TREE TRIPLE TREAT\u2122 conditioner</li>
-                      <li>Gas stove</li>
-                      <li>Wifi</li>
-                      <li>Freezer</li>
-                      <li>Microwave</li>
-                      <li>Hangers</li>
-                      <li>Free washer \u2013 In building</li>
-                      <li>Shared patio or balcony</li>
-                      <li>Pack \u2019n play/Travel crib</li>
-                      <li>Cooking basics</li>
-                      <li>Room-darkening shades</li>
-                      <li>Cleaning products</li>
-                      <li>Toaster</li>
-                      <li>Bathtub</li>
-                      <li>Hot water</li>
-                      <li>Smoke alarm</li>
-                      <li>Hair dryer</li>
-                      <li>Oven</li>
-                      <li>Extra pillows and blankets</li>
-                      <li>Heating</li>
-                      <li>Iron</li>
-                      <li>TV with standard cable</li>
-                      <li>Shower gel</li>
-                      <li>Dishes and silverware</li>
-                      <li>First aid kit</li>
-                      <li>Wine glasses</li>
-                      <li>Coffee maker</li>
-                      <li>Keypad</li>
-                      <li>Everyone Soap body soap</li>
-                      <li>Outdoor furniture</li>
-                      <li>Children\u2019s books and toys for ages 0-2 years old</li>
-                      <li>2-5 years old</li>
-                      <li>and 5-10 years old</li>
-                      <li>Coffee</li>
-                      <li>Private entrance</li>
-                      <li>Children\u2019s dinnerware</li>
-                      <li>Cleaning available during stay</li>
-                      <li>
-                        TEA TREE TRIPLE TREAT\u2122 INVIGORATING SHAMPOO shampoo
-                      </li>
-                      <li>Clothing storage: closet and dresser</li>
-                      <li>Dining table</li>
-                      <li>BBQ grill</li>
-                      <li>Sonos Era Bluetooth sound system</li>
-                      <li>Self check-in</li>
-                      <li>Drying rack for clothing</li>
-                      <li>Refrigerator</li>
-                      <li>Outdoor dining area</li>
-                      <li>Books and reading material</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.listing -->
+            <!-- /card -->
           </div>
-          <!-- /#listings -->
-        </section>
-      </main>
-      <footer>Made by John with ❤️</footer>
-    </div>
-    <!-- /.container -->
 
+
+          <div class="col-4">
+            <div class="listing card">
+              <img
+                src="https://a0.muscache.com/pictures/b7c2a199-4c17-4ba6-b81d-751719d2dac6.jpg"
+                class="card-img-top"
+                alt="AirBNB Listing"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+
+        </div>
+      </section>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
